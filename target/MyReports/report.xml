@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.275" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-07-03T06:52:31.724852400Z">
+<testcase classname="Amazon order page" name="Check prevoius order details" time="0.039">
+<failure/>
+<system-out><![CDATA[
+Given A registered user exist...............................................passed
+Given User is on amazon login oage..........................................passed
+When User enters username...................................................passed
+And User enters password....................................................passed
+And User clicks on login button.............................................passed
+Then User navigates to orders page..........................................passed
+When User clicks on orders link.............................................passed
+Then User checks previous order details.....................................passed
+Then order another..........................................................undefined
+]]></system-out>
+</testcase>
+</testsuite>

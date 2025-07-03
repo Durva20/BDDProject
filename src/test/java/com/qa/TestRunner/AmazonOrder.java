@@ -9,8 +9,14 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 features= {"src/test/resources/Feature/order.feature"},
 glue= {"com.qa.stepDefinition","com.qa.hooks"},
-//tags= "@smoke and @regression",
-plugin= {"pretty"})
+
+tags= "@smoke",
+plugin= {"pretty",
+		"json:target/MyReports/report.json",
+		"junit:target/MyReports/report.xml"},
+dryRun=true
+
+		)
 public class AmazonOrder {
 
 }

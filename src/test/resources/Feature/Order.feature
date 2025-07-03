@@ -10,11 +10,12 @@ Given A registered user exist
     And User enters password
     And User clicks on login button
     Then User navigates to orders page
-
+@smoke
   Scenario: Check prevoius order details
     When User clicks on orders link
     Then User checks previous order details
-
+    Then order another
+@regression
   Scenario: Check open order details
     When User clicks on open orders link
     And User checks open order details
